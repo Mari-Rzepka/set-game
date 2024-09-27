@@ -1,7 +1,5 @@
 {
-    "bin": {
-        "set-game": "jdeploy-bundle/jdeploy.js"
-    },
+    "bin": {"set-game": "jdeploy-bundle/jdeploy.js"},
     "author": "",
     "description": "jDeploy Swing Starter Project",
     "main": "index.js",
@@ -27,16 +25,12 @@
     "dependencies": {
         "command-exists-promise": "^2.0.2",
         "node-fetch": "2.6.7",
-        "shelljs": "^0.8.4",
         "tar": "^4.4.8",
-        "yauzl": "^2.10.0"
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
     },
     "license": "ISC",
     "name": "set-game",
-    "files": [
-        "jdeploy-bundle"
-    ],
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    }
+    "files": ["jdeploy-bundle"],
+    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
 }
