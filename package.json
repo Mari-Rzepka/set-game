@@ -1,33 +1,42 @@
 {
-  "bin": {
-    "set-game": "jdeploy-bundle/jdeploy.js"
-  },
-  "author": "",
-  "description": "jDeploy Swing Starter Project",
-  "main": "index.js",
-  "preferGlobal": true,
-  "repository": "",
-  "version": "1.0-SNAPSHOT",
-  "jdeploy": {
-    "jdk": false,
-    "javaVersion": "21",
-    "jar": "target/set-game-1.0-SNAPSHOT.jar",
-    "javafx": false,
-    "title": "Set Game"
-  },
-  "dependencies": {
-    "command-exists-promise": "^2.0.2",
-    "node-fetch": "2.6.7",
-    "shelljs": "^0.8.4",
-    "tar": "^4.4.8",
-    "yauzl": "^2.10.0"
-  },
-  "license": "ISC",
-  "name": "set-game",
-  "files": [
-    "jdeploy-bundle"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "bin": {
+        "set-game": "jdeploy-bundle/jdeploy.js"
+    },
+    "author": "",
+    "description": "jDeploy Swing Starter Project",
+    "main": "index.js",
+    "preferGlobal": true,
+    "repository": "",
+    "version": "1.0-SNAPSHOT",
+    "jdeploy": {
+        "jdk": false,
+        "javaVersion": "21",
+        "cheerpj": {
+            "githubPages": {
+                "branchPath": "{{ branch }}",
+                "tagPath": "app",
+                "branch": "gh-pages",
+                "enabled": true
+            },
+            "enabled": true
+        },
+        "jar": "target/set-game-1.0-SNAPSHOT.jar",
+        "javafx": false,
+        "title": "Set Game"
+    },
+    "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "shelljs": "^0.8.4",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0"
+    },
+    "license": "ISC",
+    "name": "set-game",
+    "files": [
+        "jdeploy-bundle"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
 }
