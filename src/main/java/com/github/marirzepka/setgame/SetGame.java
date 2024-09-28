@@ -54,7 +54,7 @@ public class SetGame extends JFrame {
         }
 
         updateDisplay();
-        updateMatchesCount();
+        //updateMatchesCount();
     }
 
     void fillDeck() {
@@ -156,7 +156,7 @@ public class SetGame extends JFrame {
             repaint();
 
             updateDisplay();
-            updateMatchesCount();
+            //updateMatchesCount();
         }
     }
 
